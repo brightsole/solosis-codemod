@@ -1,0 +1,25 @@
+{
+  "name": "new-package",
+  "version": "0.0.0",
+  "description": "New package, ripe for development in codespaces",
+  "author": "Drew Showalter <maelstroswim@gmail.com>",
+  "license": "MIT",
+  "main": "index.mjs",
+  "private": true,
+  "scripts": {
+    "start": "./index.mjs"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@brightsole/eslint-config-lint-node-ts": "^0.1.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.5",
+    "lint-staged": "^11.0.0",
+    "nyc": "^15.1.0",
+    "typescript": "^4.3.4"
+  }
+}
