@@ -5,6 +5,7 @@
   "author": "Drew Showalter <maelstroswim@gmail.com>",
   "license": "MIT",
   "main": "index.mjs",
+  "bin": "index.mjs",
   "type": "module",
   "scripts": {
     "start": "./index.mjs",
