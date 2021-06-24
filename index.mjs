@@ -1,16 +1,14 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import { $ } from 'zx';
-import path from 'path';
 import util from 'util';
-import { fileURLToPath } from 'url';
 
 const writeFile = util.promisify(fs.writeFile);
-const fileUrl = fileURLToPath(import.meta.url);
-const dirName = path.dirname(fileUrl);
-const [, , renameArg] = process.argv;
+const [, fullPath, renameArg] = process.argv;
 
-if (!renameArg) throw new Error('Must provide a name to replace (things) with.');
+const [dirName] = fullPath.split('/node_modules');
+
+if (!renameArg) throw new Error('Must provide a singular name to replace (thing)s with.');
 
 export const modifyFile = async (filePath, rename = renameArg) => {
   const contents = fs.readFileSync(filePath, 'utf8');
@@ -43,4 +41,4 @@ export const recurseFolders = async (directoryFilePath = dirName) => {
 };
 
 await recurseFolders();
-await $`npm uninstall solosis-codemod`;
+await $`npm uninstall @brightsole/solosis-codemod`;
