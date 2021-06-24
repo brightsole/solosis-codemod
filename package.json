@@ -1,11 +1,10 @@
 {
-  "name": "solosis-codemod",
+  "name": "@brightsole/solosis-codemod",
   "version": "0.0.0",
   "description": "Codemod for solosis to make renames easy as pie",
   "author": "Drew Showalter <maelstroswim@gmail.com>",
   "license": "MIT",
   "main": "index.mjs",
-  "private": true,
   "type": "module",
   "scripts": {
     "start": "./index.mjs",

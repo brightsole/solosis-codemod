@@ -1,4 +1,4 @@
-# solosis-codemod
+# @brightsole/solosis-codemod
 
 `npx @brightsole/solosis-codemod NEW_NAME_FOR_*THING*_RESOURCE`
 
