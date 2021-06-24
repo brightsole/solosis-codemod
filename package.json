@@ -1,6 +1,6 @@
 {
   "name": "@brightsole/solosis-codemod",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Codemod for solosis to make renames easy as pie",
   "author": "Drew Showalter <maelstroswim@gmail.com>",
   "license": "MIT",
