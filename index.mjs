@@ -39,7 +39,7 @@ export const recurseFolders = async (directoryFilePath = dirName) => {
   );
 
   await Promise.all(folders.map(recurseFolders));
-  await Promise.all(files.map(modifyFile));
+  await Promise.all(files.map((f) => modifyFile(f)));
 };
 
 await recurseFolders();
