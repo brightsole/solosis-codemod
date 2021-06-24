@@ -1,3 +1,5 @@
-# new-package
+# solosis-codemod
 
-Create a new package real quick, it has some decent setup like codespaces, eslint, and tests.
+`npx @brightsole/solosis-codemod NEW_NAME_FOR_*THING*_RESOURCE`
+
+package does a find and replace for the words `thing` and `Thing` in the codebase, and then uninstalls itself. It can really speed up the creation of `@brightsole/solosis` microservices.
