@@ -1,13 +1,15 @@
 {
-  "name": "new-package",
+  "name": "solosis-codemod",
   "version": "0.0.0",
-  "description": "New package, ripe for development in codespaces",
+  "description": "Codemod for solosis to make renames easy as pie",
   "author": "Drew Showalter <maelstroswim@gmail.com>",
   "license": "MIT",
   "main": "index.mjs",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "./index.mjs"
+    "start": "./index.mjs",
+    "test": "jest ."
   },
   "lint-staged": {
     "*.js": [
@@ -21,5 +23,8 @@
     "lint-staged": "^11.0.0",
     "nyc": "^15.1.0",
     "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "zx": "^1.14.2"
   }
 }
